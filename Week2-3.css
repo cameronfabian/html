@@ -1,0 +1,65 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.step {
+    display: none;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.step h2 {
+    margin-top: 0;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+label[for^="step"] {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+label[for="step1"] {
+    float: right;
+}
+
+label[for="step2"] {
+    float: left;
+}
+
+label[for="step3"] {
+    float: right;
+}
+
+input[type="radio"]:checked ~ .step {
+    display: none;
+}
+
+#step1:checked ~ #step1Div,
+#step2:checked ~ #step2Div,
+#step3:checked ~ #step3Div {
+    display: block;
+}

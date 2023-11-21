@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning Example</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #container {
+            width: 100%;
+            height: 500px;
+            background-color: #f0f0f0;
+            position: relative;
+        }
+
+        #static-box {
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+        }
+
+        #relative-box {
+            width: 100px;
+            height: 100px;
+            background-color: #e74c3c;
+            position: relative;
+            left: 50px;
+            top: 50px;
+        }
+
+        #absolute-box {
+            width: 100px;
+            height: 100px;
+            background-color: #27ae60;
+            position: absolute;
+            right: 50px;
+            bottom: 50px;
+        }
+
+        #fixed-box {
+            width: 100px;
+            height: 100px;
+            background-color: #f1c40f;
+            position: fixed;
+            right: 20px;
+            top: 20px;
+        }
+
+        #sticky-box {
+            width: 100px;
+            height: 100px;
+            background-color: #9b59b6;
+            position: sticky;
+            top: 0;
+        }
+
+        #content {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="static-box">Static</div>
+        <div id="relative-box">Relative</div>
+        <div id="absolute-box">Absolute</div>
+        <div id="fixed-box">Fixed</div>
+        <div id="sticky-box">Sticky</div>
+    </div>
+    <div">
+        <p>These are examples of the positioned elements.</p>
+    </div>
+</body>
+</html>

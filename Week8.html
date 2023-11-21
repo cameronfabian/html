@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanted Poster</title>
+    <style>
+        body {
+    font-family: 'Old Standard TT', serif;
+    background-color: #D2B48C;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.wanted-poster {
+    background: #fff;
+    border: 5px solid #8B4513;
+    padding: 2%;
+    border-radius: 10%;
+    max-width: 90%;
+    height: 90%;
+}
+
+.reward {
+    background: #8B0000;
+    color: #fff;
+    font-size: 48px;
+    padding: 5%px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.poster-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.portrait img {
+    max-width: 75%;
+    height: 85%;
+    border: 6px solid #8B4513;
+    border-radius: 10px;
+}
+
+.info {
+    text-align: left;
+    padding-left: 40px;
+}
+
+h1 {
+    font-size: 48px;
+    margin: 0;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+p {
+    font-size: 32px;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.more-info {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 30px;
+
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 30px;
+    align-self: center;
+}
+
+@media screen and (max-width: 768px) {
+    .portait img{
+        width: 100%;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="wanted-poster">
+        <div class="reward">WANTED: $1,000,000 REWARD</div>
+        <div class="poster-content">
+            <div class="portrait">
+                <img src="blueshoes.jpg" alt="The Shoes of the Serial Pooper">
+            </div>
+            <div class="info">
+                <h1><b>WANTED</b></h1>
+                <p><b>Name:</b> Serial Pooper</p>
+                <p><b>Age:</b> Unknown</p>
+                <p><b>Height:</b> Approximately 6'0</p>
+                <p><b>Weight:</b> Unknown</p>
+                <p><b>Crimes:</b> Hogging the Stall, Making Weird Noises</p>
+            </div>
+        </div>
+        <div class="more-info">For more information on the Serial Pooper, click on the link below.</div>
+        <div class="link"><a href="SerialPooper.html">Serial Pooper More Info</a></div>
+    </div>
+</body>
+</html>

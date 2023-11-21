@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Menu</title>
+    <style>
+       body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu li a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu li:hover > .sub-menu {
+    display: block;
+}
+
+.menu li:hover {
+    background-color: #555;
+}
+
+.menu .sub-menu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.sub-menu li {
+    display: block;
+}
+
+.sub-menu li a {
+    padding: 10px 15px;
+    color: #fff;
+}
+
+.sub-menu li:hover {
+    background-color: #444;
+}
+
+.menu li:hover > .sub-menu {
+    display: block;
+    transition: all 0.3s;
+}
+
+.menu .dropdown:hover > a {
+    background-color: #555;
+}
+
+.menu .dropdown:hover > a:after {
+    content: "\25B2";
+}
+
+.menu .dropdown > a:after {
+    content: "\25BC";
+    margin-left: 5px;
+}
+
+.menu .dropdown:hover .sub-menu {
+    top: 100%;
+    left: 0;
+    transition: all 0.3s;
+}
+ 
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li class="dropdown">
+                <a href="#">Services</a>
+                <ul class="sub-menu">
+                    <li><a href="#">Web Design</a></li>
+                    <li><a href="#">Graphic Design</a></li>
+                    <li><a href="#">Programming</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Portfolio</a>
+                <ul class="sub-menu">
+                    <li><a href="#">Project 1</a></li>
+                    <li><a href="#">Project 2</a></li>
+                    <li><a href="#">Project 3</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

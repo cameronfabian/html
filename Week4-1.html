@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Advanced Contact Form</title>
+    <style>
+        form {
+            width: 400px;
+            margin: 0 auto;
+            font-family: Arial, sans-serif;
+        }
+
+        fieldset {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        legend {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <form action="submit.php" method="post">
+        <section>
+            <header>
+                <h1>Contact Info</h1>
+            </header>
+
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div>
+                <label for="number">Phone Number:</label>
+                <input type="tel" id="number" name="number" required>
+            </div>
+
+            <div>
+                <label for="date">Birthday:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+        </section>
+
+        <section>
+            <header>
+                <h1>Preferences</h1>
+            </header>
+
+            <div>
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+            </div>
+        </section>
+
+        <section>
+            <header>
+                <h1>Interests</h1>
+            </header>
+
+            <div>
+                <label>Select your interests:</label>
+                <select name="interests" id="interests">
+                    <option value="programming">Programming</option>
+                    <option value="graphic design">Graphic Design</option>
+                    <option value="gaming">Gaming</option>
+                </select>
+            </div>
+        </section>
+
+        <section>
+            <header>
+                <h1>Resume</h1>
+            </header>
+
+            <div>
+                <label for="resume">Resume:</label>
+                <input type="file" id="resume" name="resume">
+            </div>
+        </section>
+
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+</html>

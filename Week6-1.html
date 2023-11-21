@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Nested Boxes</title>
+    <style>
+        .container {
+    width: 400px;
+    margin: 20px;
+    background-color: rgb(255, 0, 0);
+    padding: 10px;
+}
+
+.box {
+    background-color: rgb(238, 113, 75);
+    padding: 20px;
+    margin: 20px;
+}
+
+.inner-box {
+    background-color: rgb(226, 121, 121);
+    padding: 30px;
+    margin: 30px;
+}
+
+.content-box {
+    background-color: rgb(201, 70, 70);
+    padding: 40px;
+    margin: 40px;
+    box-sizing: content-box;
+}
+
+.border-box {
+    background-color: rgb(201, 76, 87);
+    padding: 40px;
+    margin: 40px;
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="inner-box">
+                <div class="content-box">
+                    <p>Content Box</p>
+                </div>
+                <div class="border-box">
+                    <p>Border Box</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
